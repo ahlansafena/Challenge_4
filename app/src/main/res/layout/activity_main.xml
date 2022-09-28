@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+
+    <TextView
+        android:id="@+id/gunting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/coming_soon"
+        android:rotation="-10"
+        android:text="@string/gunting"
+        android:textColor="#4CAF50"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/kertas"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/kertas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/coming_soon"
+        android:rotation="-10"
+        android:text="@string/kertas"
+        android:textColor="#FF5722"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/gunting"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/batu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/coming_soon"
+        android:rotation="-10"
+        android:text="@string/batu"
+        android:textColor="#9C27B0"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/kertas"
+        app:layout_constraintTop_toBottomOf="@+id/kertas" />
+
+    <TextView
+        android:id="@+id/textComp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="56dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="@string/comp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textPemain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="232dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="@string/pemain_1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageBatu1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/batupemain1"
+        app:layout_constraintEnd_toEndOf="@+id/textPemain1"
+        app:layout_constraintHorizontal_bias="0.608"
+        app:layout_constraintStart_toStartOf="@+id/textPemain1"
+        app:layout_constraintTop_toBottomOf="@+id/textPemain1"
+        app:srcCompat="@drawable/ic_batu" />
+
+    <ImageView
+        android:id="@+id/imageBatuComp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/batucomputer"
+        app:layout_constraintEnd_toEndOf="@+id/textComp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textComp"
+        app:layout_constraintTop_toBottomOf="@+id/textComp"
+        app:srcCompat="@drawable/ic_batu" />
+
+    <ImageView
+        android:id="@+id/imageKertas1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/kertaspemain1"
+        app:layout_constraintEnd_toEndOf="@+id/imageBatu1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageBatu1"
+        app:layout_constraintTop_toBottomOf="@+id/imageBatu1"
+        app:srcCompat="@drawable/ic_kertas" />
+
+    <ImageView
+        android:id="@+id/imageKertasComp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/kertascomputer"
+        app:layout_constraintEnd_toEndOf="@+id/imageBatuComp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageBatuComp"
+        app:layout_constraintTop_toBottomOf="@+id/imageBatuComp"
+        app:srcCompat="@drawable/ic_kertas" />
+
+    <ImageView
+        android:id="@+id/imageGunting1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/guntingpemain1"
+        app:layout_constraintEnd_toEndOf="@+id/imageKertas1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageKertas1"
+        app:layout_constraintTop_toBottomOf="@+id/imageKertas1"
+        app:srcCompat="@drawable/ic_gunting" />
+
+    <ImageView
+        android:id="@+id/imageGuntingComp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/guntingcomputer1"
+        app:layout_constraintEnd_toEndOf="@+id/imageKertasComp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageKertasComp"
+        app:layout_constraintTop_toBottomOf="@+id/imageKertasComp"
+        app:srcCompat="@drawable/ic_gunting" />
+
+    <ImageView
+        android:id="@+id/imageRefresh"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        android:contentDescription="@string/refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_refresh" />
+
+    <TextView
+        android:id="@+id/statusWinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:rotation="-10"
+        android:text="VS"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageKertasComp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageKertas1"
+        app:layout_constraintTop_toBottomOf="@+id/batu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
